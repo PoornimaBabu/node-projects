@@ -1,0 +1,47 @@
+// const fs = require('fs')
+// require('./appendNote')
+// fs.writeFileSync('notes.txt', 'Welcome to Nodejs!')
+// const validator = require('validator')
+
+// console.log(validator.isEmail('poorni@gmail.com'))
+// console.log(validator.isURL('www.xyz.com'))
+// console.log(validator.isDivisibleBy('71',732))
+
+// console.log(chalk.bgMagenta("Success"))
+// console.log(chalk.bold.bgRedBright("WARNING!!"))
+
+const utils = function utils(){
+    const add = function add(a, b){
+    return a + b
+}
+
+
+const res = add(10, 16)
+console.log(res)
+
+,
+        body: {
+            content: "Content of the note",
+            demandOption: true,
+            type: 'string'
+        }  
+
+
+-----------MY LOGIC TO DELETE A NOTE----------
+
+  console.log(notes.length)
+    if (notes.length > 0){
+        for (var i=0; i < notes.length; i++){
+            //console.log("inside")
+            if(notes[i].title === title){
+                console.log("titles matched")
+                notes.splice(i,1)
+                saveNotes(notes)
+            }else{
+                //console.log("Title not present!")
+            }
+        }
+    } else {
+        console.log("No notes found!")
+    }
+    
