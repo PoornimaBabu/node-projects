@@ -44,4 +44,24 @@ console.log(res)
     } else {
         console.log("No notes found!")
     }
-    
+----------------------------------------------------------------------
+    Asynchronous Function Example:
+    console.log("one")
+
+setTimeout(() => {
+    console.log('1 sec')
+},1000)
+
+setTimeout(()=>{
+    console.log('3 sec')
+}, 3000)
+
+setTimeout(()=>{
+    console.log('2 sec')
+},2000)
+
+setTimeout(()=>{
+    console.log('2-1 sec')
+},2000)
+
+console.log('Final')
