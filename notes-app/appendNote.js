@@ -1,3 +1,5 @@
-const fs = require('fs')
+// const fs = require('fs')
 
-fs.appendFileSync('note.txt', "It's working!")
+// fs.appendFileSync('note.txt', "It's working!")
+
+console.log(process.argv[2])

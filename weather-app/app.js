@@ -1,5 +1,20 @@
-const http = require('http')
+const geoCode = require('./utils/geoCode')
+const getWeather = require('./utils/getWeather')
 
-const weatherData = http.get('http://api.weatherstack.com/current?access_key=4f8356019d1d6d5b96e3dde9df5857f3&query=Chennai')
+if(!process.argv[2]){
+    return console.log("Please enter valid location!")
+}
 
-console.log(weatherData)
+geoCode(process.argv[2],(error,{location, latitude, longitude} = {})=>{
+    if(error){
+        return console.log('Error:',error)
+    }
+     //getWeather(data.latitude, data.longitude, (error,resp) =>{
+     getWeather(latitude, longitude, (error,{temperature, feelslike, description} = {}) =>{
+         if(error){
+            return console.log('Error:',error)
+         }
+        console.log('Location:', location)
+        console.log(description + '. Temperature is ' + temperature + ' celcius' + '. But feels like ' + feelslike +  '.')
+    })
+})

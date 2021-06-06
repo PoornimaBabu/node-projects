@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "nodemon": "^2.0.7",
+    "request": "^2.88.2",
+    "yargs": "^17.0.1"
+  }
+}
