@@ -39,3 +39,15 @@ header a{
 img{
     width: 250px;
 }
+
+input{
+    border: 1px solid #888888;
+    padding: 6px;
+}
+
+button{
+    cursor: pointer;
+    padding: 6px;
+    border: #eeeeee 1px solid;
+    color: black;
+}
