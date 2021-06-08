@@ -1,7 +1,3 @@
-
-console.log("JS from public folder...")
-
-
 const weather = document.querySelector('form')
 const address = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
@@ -11,7 +7,7 @@ weather.addEventListener('submit', (e) => {
     e.preventDefault()
     const searchLocation  = address.value
 
-    const url = 'http://localhost:3000/weather?location=' + searchLocation
+    const url = '/weather?location=' + searchLocation
 
     messageOne.textContent = "Loading..."
     messageTwo.textContent = ''
